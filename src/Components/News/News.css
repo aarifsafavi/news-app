@@ -1,0 +1,34 @@
+.mainCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loadMoreBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: 50%;
+}
+.container {
+  display: flex;
+}
+
+.checkedArticlesContainer {
+  width: 25%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.mainCard {
+  flex: 1;
+  padding: 20px;
+}
+
+.favoriteItem {
+  margin-bottom: 10px;
+}
+.favorite-checkbox {
+  position: absolute;
+  margin-left: 200px;
+}
+.delete-btnCheckedItem {
+  color: red;
+}
