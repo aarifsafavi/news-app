@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    const validId = "aarif";
+    const validId = "test@1234";
     const validPassword = "test@1234";
 
     if (id === validId && password === validPassword) {
@@ -26,14 +26,14 @@ const Login = () => {
           <input
             className="login-input"
             type="text"
-            placeholder="Id"
+            placeholder="test@1234"
             value={id}
             onChange={(e) => setId(e.target.value)}
           />
           <input
             className="login-input"
             type="password"
-            placeholder="Password"
+            placeholder="test@1234"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
