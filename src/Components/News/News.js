@@ -150,7 +150,7 @@ const News = () => {
                     {ele.author === null ? "Unknown" : ele.author}
                   </h5>
                   <p className="card-text">{ele.title}</p>
-                  <a href={ele.url} className="btn btn-primary">
+                  <a href={ele.url} target="_self" className="btn btn-primary">
                     Read More
                   </a>
                   <input
