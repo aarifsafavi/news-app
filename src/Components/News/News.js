@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import "./News.css";
 
@@ -37,7 +37,7 @@ const News = () => {
     );
   };
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     let response = await fetch(
       "https://newsapi.org/v2/top-headlines?country=us&apiKey=63ae37e79f0243e9ac1443ee16cef7a2"
     );
@@ -49,11 +49,11 @@ const News = () => {
     }));
     setMyNews(data.articles);
     setDisplayedNews(data.articles.slice(0, 4)); // Initially display 3 articles
-  };
+  }, []);
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const loadMoreArticles = () => {
     const newIndex = displayedNews.length;
