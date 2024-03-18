@@ -113,7 +113,7 @@ const News = () => {
                   </button>
                   <a
                     href={article.url}
-                    target="_blank"
+                    target="_seff"
                     rel="noopener noreferrer"
                   >
                     <button>Read More</button>
@@ -150,7 +150,7 @@ const News = () => {
                     {ele.author === null ? "Unknown" : ele.author}
                   </h5>
                   <p className="card-text">{ele.title}</p>
-                  <a href={ele.url} target="_blank" className="btn btn-primary">
+                  <a href={ele.url} target="_self" className="btn btn-primary">
                     Read More
                   </a>
                   <input
