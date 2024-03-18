@@ -53,7 +53,7 @@ const News = () => {
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   const loadMoreArticles = () => {
     const newIndex = displayedNews.length;
